@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard - Latitude</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,300,100,700,900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+  <link type="text/css" rel="stylesheet" href="css/main.css" media="screen,projection" />
+</head>
+
+<body class="dark">
+  <header>
+    <nav>
+      <div class="nav-wrapper z-depth-2">
+        <a href="index.html" class="brand-logo">Latitude</a>
+        <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="large material-icons">menu</i></a>
+        <ul class="right hide-on-med-and-down">
+          <li class="active"><a class="dropdown-trigger" href="#" data-target="nav_dropdown">Plots<i
+                class="material-icons right">arrow_drop_down</i></a></li>
+          <ul id="nav_dropdown" class="dropdown-content">
+            <li><a href="#!"><i class="material-icons">wb_sunny</i>Max Temperature</a></li>
+            <li><a href="#!"><i class="material-icons">blur_on</i>Humidity</a></li>
+            <li><a href="#!"><i class="material-icons">wb_cloudy</i>Cloudiness</a></li>
+            <li><a href="#!"><i class="material-icons">network_check</i>Wind Speed</a></li>
+          </ul>
+          <li><a class="waves-effect" href="comparison.html" alt="Comparison">Comparison</a></li>
+          <li><a class="waves-effect" href="data.html" alt="Data">Data</a></li>      
+        </ul>
+      </div>
+    </nav>
+
+    <ul id="slide-out" class="sidenav">
+      <li>
+        <div class="user-view">
+          <div class="background">
+            <img src="images/data.jpg">
+          </div>
+        </div>
+      </li>
+      <li><a class="waves-effect active" href="index.html"><i class="material-icons">dashboard</i>Dashboard</a></li>
+      <li class="no-padding">
+        <ul class="collapsible collapsible-accordion">
+          <li>
+            <a class="collapsible-header"><i
+              class="material-icons">multiline_chart</i>Plots<i class="right material-icons">arrow_drop_down</i></a>
+            <div class="collapsible-body">
+              <ul>
+                <li><a class="waves-effect" href="#!"><i class="material-icons">wb_sunny</i>Max Temperature</a></li>
+                <li><a class="waves-effect" href="#!"><i class="material-icons">blur_on</i>Humidity</a></li>
+                <li><a class="waves-effect" href="#!"><i class="material-icons">wb_cloudy</i>Cloudiness</a></li>
+                <li><a class="waves-effect" href="#!"><i class="material-icons">network_check</i>Wind Speed</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </li>
+      <li><a class="waves-effect" href="comparison.html" alt="Comparison"><i class="material-icons">compare_arrows</i>Comparison</a></li>
+      <li><a class="waves-effect" href="data.html" alt="Data"><i class="material-icons">data_usage</i>Data</a></li>      
+    </ul>
+  </header>
+  <main>
+    <div class="container">
+      <div class="row">
+        <div class="col s12 l9">
+          <div class="card">
+            <div class="card-content">
+              <h1 class="card-title">
+                <i class="medium material-icons">library_books</i>
+                Summary: Latitude vs. X
+              </h1>
+              <hr />
+              <p>
+                <img src="images/Fig1.png" alt="summary 1" width="200" height="200"
+                  style="float: left; margin-right: 20px;" />
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Et leo duis ut diam quam. Sed vulputate mi sit amet mauris commodo quis imperdiet massa. Neque ornare aenean euismod elementum. Id porta nibh venenatis cras sed felis eget. Sit amet facilisis magna etiam tempor orci eu. Nam at lectus urna duis convallis convallis tellus. Nulla pharetra diam sit amet nisl suscipit adipiscing bibendum. Mattis enim ut tellus elementum sagittis vitae et. Donec enim diam vulputate ut pharetra sit amet aliquam.
+                  <br/><br/>
+                  Pellentesque habitant morbi tristique senectus et netus et malesuada. A arcu cursus vitae congue mauris rhoncus aenean vel elit. Vulputate sapien nec sagittis aliquam. Vel pretium lectus quam id leo in. Eu mi bibendum neque egestas congue.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 l3">
+          <div class="card">
+            <div class="card-content">
+              <h2 class="card-title">
+                <i class="small material-icons">insert_chart</i>
+                Visualizations
+              </h2>
+              <hr />
+              <p>
+              <div class="row">
+                <div class="col s12 m6">
+                  <img src="images/Fig1.png" alt="visualization 1" style="width:100%;height:100%;">
+                </div>
+                <div class="col s12 m6">
+                  <img src="images/Fig2.png" alt="visualization 2" style="width:100%;height:100%;">
+                </div>
+                <div class="col s12 m6">
+                  <img src="images/Fig3.png" alt="visualization 3" style="width:100%;height:100%;">
+                </div>
+                <div class="col s12 m6">
+                  <img src="images/Fig4.png" alt="visualization 4" style="width:100%;height:100%;">
+                </div>
+              </div>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="page-footer">
+    <div class="footer-copyright">
+      <div class="container">
+        © 2020
+      </div>
+    </div>
+  </footer>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,260 @@
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    background-color: rgb(134, 134, 134);
+    -webkit-transition: color 1s ease, background-color 1s ease;
+       -moz-transition: color 1s ease, background-color 1s ease;
+            transition: color 1s ease, background-color 1s ease;
+}
+main {
+    flex: 1 0 auto;
+}
+i {
+    vertical-align: middle;
+}
+h1.header {
+    margin: 0;
+    padding-top: 22px;
+    text-align: center;
+    letter-spacing: 1em;
+}
+h3.header {
+    margin-top: 0;
+}
+.header {
+    /* color: #ee6e73; */
+    font-weight: 300;
+}
+.page-footer {
+    padding-top: 0;
+}
+.col p > a {
+    font-size: 20px;
+    text-decoration: none;
+    transition: color 0.5s ease-in-out;
+    transition: font-weight 0.3s ease-in-out;
+}
+.col p > a:hover {
+    cursor: pointer;
+    color: #ee6e73;
+    font-weight: bold;
+    /*text-shadow: 1px 1px 1px black;*/
+}
+.collection .collection-item.avatar {
+    min-height: 0px;
+}
+nav .brand-logo {
+    margin-left: 5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+nav .sidenav-trigger {
+    float: right;
+}
+nav .sidenav-trigger i {
+    font-size: 48px;
+}
+.sidenav .user-view {
+    height: 150px;
+}
+.sidenav .user-view .background img {
+    width: 300px;
+}
+.sidenav .collapsible-header, 
+.sidenav.fixed .collapsible-header {
+    padding: 0 32px;
+}
+.sidenav .collapsible-body, 
+.sidenav.fixed .collapsible-body {
+    background: transparent;
+}
+main > div.container {
+    margin: 50px auto;
+    width: 90% !important;
+}
+.card .card-content > p {
+    padding-top: 30px;
+}
+.card .card-content h1.card-title {
+    color: #ee6e73;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 0;
+    padding-bottom: 1rem;
+}
+.card .card-content h1.card-title i {
+    font-size: 2.5rem;
+}
+.card .card-content h2.card-title {
+    color: #ee6e73;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 0;
+    padding-bottom: 1rem;
+}
+.card .card-content h2.card-title i {
+    font-size: 2rem;
+}
+.card .card-content .card-title i {
+    display: none;
+}
+hr {
+    border-width: 2px;
+}
+.page-footer {
+    position:relative;
+    -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+       -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+            box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+.page-footer:before {
+    content:"";
+    position:absolute;
+    z-index:-1;
+    -webkit-box-shadow:0 0 20px rgba(0,0,0,0.8);
+    -moz-box-shadow:0 0 20px rgba(0,0,0,0.8);
+    box-shadow:0 0 20px rgba(0,0,0,0.8);
+    top:0;
+    bottom:0;
+    left:10px;
+    right:10px;
+    -moz-border-radius:100px / 10px;
+    border-radius:100px / 10px;
+}
+.page-footer .footer-copyright {
+    min-height: unset;
+    text-align: center;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+body.dark {
+    background-color: #333;
+    color: #fff;
+}
+body.dark nav, body.dark .page-footer {
+    background-color: #333;
+}
+body.dark .page-footer .footer-copyright .container {
+    line-height: 3;
+    width: auto;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+body.dark nav .brand-logo,
+body.dark .page-footer .footer-copyright .container {
+    background-color: #666;
+    font-weight: bold;
+    color: #000;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);
+    /* background-color: #2196F3; */
+}
+body.dark .dropdown-content li>a, 
+body.dark .dropdown-content li>span {
+    background-color: #9AA0A6 !important;
+}
+body.dark .dropdown-content li>a:hover, 
+body.dark .dropdown-content li>span:hover {
+    background-color: #666 !important;
+}
+body.dark nav ul li.active,
+body.dark nav ul li.active a
+{
+    background-color: #666;
+    font-weight: bold;
+    color: #000;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);
+}
+body.dark .card {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+body.dark .card .card-content h1.card-title {
+    color: #000;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);
+}
+body.dark .card .card-content h2.card-title {
+    color: #000;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);
+}
+body.dark hr {
+    border-color: #000;
+}
+body.dark .btn {
+    background-color: #EE6F73;
+}
+body.dark .divider {
+    opacity: 0.2;
+}
+body.dark .sidenav {
+    background-color: #2D2D31;
+}
+body.dark .sidenav li a:not(.subheader) {
+    color: #89B2F5;
+}
+body.dark .sidenav li a:not(.subheader):hover {
+    background-color: #3B4043;
+}
+body.dark .sidenav li a.subheader {
+    color: #9AA0A6;
+}
+body.dark .sidenav li a .material-icons {
+    color: #9AA0A6;
+}
+body.dark .collection {
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+body.dark .collection .collection-item {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+body.dark nav ul a:hover {
+    background-color: #666;
+    font-weight: bold;
+    color: #000;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);
+    /* background-color: #2196F3; */
+}
+
+@media (min-width: 1280px) {
+    .card .card-content h2.card-title i {
+        display: inline;
+    }
+}
+@media (min-width: 701px) {
+    .card .card-content h1.card-title {
+        font-size: 2.5em;
+        letter-spacing: .1em;;
+    }
+    .card .card-content h1.card-title i {
+        font-size: 3rem;
+    }
+    .card .card-content h2.card-title {
+        font-size: 2.5 em;
+    }
+    .card .card-content h2.card-title i {
+        font-size: 2rem;
+    }
+    .card .card-content .card-title {
+        line-height: 2em;
+    }
+    .card .card-content h1.card-title i {
+        display: inline;
+    }
+}
+@media (min-width: 449px) {
+    .card .card-content h1.card-title {
+        font-size: 2em;
+    }
+}
+@media only screen and (max-width: 992px) {
+    nav .brand-logo {
+        left: 0px;
+        margin-left: 2rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        background-color: #2196F3;
+        -webkit-transform: translateX(0px);
+        transform: translateX(0px);
+    }
+}
