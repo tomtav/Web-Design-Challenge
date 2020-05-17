@@ -10,8 +10,17 @@ body {
 main {
     flex: 1 0 auto;
 }
+main .container {
+    margin: 10px auto;
+    width: 90% !important;
+    max-width: 1920px !important;
+}
 i {
     vertical-align: middle;
+}
+img.preview {
+    width: 100%;
+    height: 100%;
 }
 h1.header {
     margin: 0;
@@ -25,6 +34,10 @@ h3.header {
 .header {
     /* color: #ee6e73; */
     font-weight: 300;
+}
+h5.image-title {
+    font-size: 1.2em;
+    margin-bottom: 1em;
 }
 .page-footer {
     padding-top: 0;
@@ -69,10 +82,6 @@ nav .sidenav-trigger i {
 .sidenav.fixed .collapsible-body {
     background: transparent;
 }
-main > div.container {
-    margin: 50px auto;
-    width: 90% !important;
-}
 .card .card-content > p {
     padding-top: 30px;
 }
@@ -101,6 +110,10 @@ main > div.container {
 }
 hr {
     border-width: 2px;
+}
+.card .card-content > p.caption {
+    padding-top: 0px !important;
+    padding-bottom: 20px !important;
 }
 .page-footer {
     position:relative;
@@ -152,12 +165,16 @@ body.dark .page-footer .footer-copyright .container {
 }
 body.dark .dropdown-content li>a, 
 body.dark .dropdown-content li>span {
+    font-weight: bold;
+    color: #000;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);
     background-color: #9AA0A6 !important;
 }
 body.dark .dropdown-content li>a:hover, 
 body.dark .dropdown-content li>span:hover {
     background-color: #666 !important;
 }
+
 body.dark nav ul li.active,
 body.dark nav ul li.active a
 {
@@ -243,6 +260,9 @@ body.dark nav ul a:hover {
     }
 }
 @media (min-width: 449px) {
+    main .container {
+            margin: 50px auto;
+    }
     .card .card-content h1.card-title {
         font-size: 2em;
     }
