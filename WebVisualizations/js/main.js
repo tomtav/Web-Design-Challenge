@@ -3,13 +3,13 @@ document.addEventListener('DOMContentLoaded', _ => {
         'closeOnClick': true,
     }
     let sidenav = document.querySelectorAll('.sidenav');
-    let instancesSideNav = M.Sidenav.init(sidenav, sideNavOptions);
+    let instanceSideNav = M.Sidenav.init(sidenav, sideNavOptions);
 
     let collapseOptions = {
         'closeOnClick': true,
     }
     let collapsible = document.querySelectorAll('.collapsible');
-    let instancesCollapsible = M.Collapsible.init(collapsible, collapseOptions);
+    let instanceCollapsible = M.Collapsible.init(collapsible, collapseOptions);
 
     let dropdownOptions = {
         'constrainWidth': false,

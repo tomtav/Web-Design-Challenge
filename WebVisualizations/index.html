@@ -18,10 +18,10 @@
         <a href="index.html" class="brand-logo">Latitude</a>
         <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="large material-icons">menu</i></a>
         <ul class="right hide-on-med-and-down">
-          <li class="active"><a class="dropdown-trigger" href="#" data-target="nav_dropdown">Plots<i
-                class="material-icons right">arrow_drop_down</i></a></li>
+          <li class="active"><a class="dropdown-trigger" href="#" data-target="nav_dropdown"
+              data-activates="nav_dropdown">Plots<i class="material-icons right">arrow_drop_down</i></a></li>
           <ul id="nav_dropdown" class="dropdown-content">
-            <li><a href="#!"><i class="material-icons">wb_sunny</i>Max Temperature</a></li>
+            <li><a href="1_lat_temp.html"><i class="material-icons">wb_sunny</i>Max Temperature</a></li>
             <li><a href="#!"><i class="material-icons">blur_on</i>Humidity</a></li>
             <li><a href="#!"><i class="material-icons">wb_cloudy</i>Cloudiness</a></li>
             <li><a href="#!"><i class="material-icons">network_check</i>Wind Speed</a></li>
@@ -40,7 +40,8 @@
           </div>
         </div>
       </li>
-      <li><a class="waves-effect active" href="index.html"><i class="material-icons">dashboard</i>Dashboard</a></li>
+      <li class="active"><a class="waves-effect" href="index.html"><i class="material-icons">dashboard</i>Dashboard</a>
+      </li>
       <li class="no-padding">
         <ul class="collapsible collapsible-accordion">
           <li>
@@ -48,7 +49,8 @@
                 class="right material-icons">arrow_drop_down</i></a>
             <div class="collapsible-body">
               <ul>
-                <li><a class="waves-effect" href="#!"><i class="material-icons">wb_sunny</i>Max Temperature</a></li>
+                <li><a class="waves-effect" href="1_lat_temp.html"><i class="material-icons">wb_sunny</i>Max
+                    Temperature</a></li>
                 <li><a class="waves-effect" href="#!"><i class="material-icons">blur_on</i>Humidity</a></li>
                 <li><a class="waves-effect" href="#!"><i class="material-icons">wb_cloudy</i>Cloudiness</a></li>
                 <li><a class="waves-effect" href="#!"><i class="material-icons">network_check</i>Wind Speed</a></li>
@@ -65,7 +67,7 @@
   <main>
     <div class="container">
       <div class="row">
-        <div class="col s12 l9">
+        <div class="col s12 m8">
           <div class="card z-depth-1">
             <div class="card-content">
               <h1 class="card-title">
@@ -73,21 +75,22 @@
                 Summary: Latitude vs. X
               </h1>
               <hr />
+              <figure class="left"><img class="responsive-img" src="images/1_lat_temp.png"
+                  alt="Latitude vs Temperature Image" /></figure>
               <p>
-              <div class="left"><img class="responsive-img" src="images/1_lat_temp.png" alt="summary 1"
-                  style="max-width:200px;margin-right: 2em;" /></div>
-              The purpose of this project was to analyze how weather changes as you get closer to the equator. To
-              accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a data set of
-              over 500 cities.
-              <br /><br />
-              After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude.
-              Factors we looked at included: temperature, cloudiness, wind speed, and humidity. This site provides the
-              source data and visualizations created as part of the analysis, as well as explanations and descriptions
-              of any trends and correlations witnessed.</p>
+                The purpose of this project was to analyze how weather changes as you get closer to the equator. To
+                accomplish this analysis, I first pulled data from the OpenWeatherMap API to assemble a data set of
+                over 500 cities.
+              </p>
+              <p>
+                After assembling the dataset, I used Matplotlib to plot various aspects of the weather vs. latitude.
+                Factors I looked at included: temperature, cloudiness, wind speed, and humidity. This site provides the
+                source data and visualizations created as part of the analysis, as well as explanations and descriptions
+                of any trends and correlations witnessed.</p>
             </div>
           </div>
         </div>
-        <div class="col s12 l3">
+        <div class="col s12 m4">
           <div class="card">
             <div class="card-content">
               <h2 class="card-title">
@@ -95,18 +98,22 @@
                 Visualizations
               </h2>
               <hr />
-              <div class="row pt-5">
-                <div class="col s3 l6">
-                  <img class="responsive-img" src="images/1_lat_temp.png" alt="visualization 1">
+              <div class="row viz-box">
+                <div class="col s3 m6 center-align">
+                  <a href="1_lat_temp.html"><img class="hoverable responsive-img" src="images/1_lat_temp.png"
+                      alt="Latitude vs Temperature Image"></a>
                 </div>
-                <div class="col s3 l6">
-                  <img class="responsive-img" src="images/2_lat_humidity.png" alt="visualization 2">
+                <div class="col s3 m6 center-align">
+                  <a href="2_lat_humidity.html"><img class="hoverable responsive-img" src="images/2_lat_humidity.png"
+                      alt="Latitude vs Humidity Image"></a>
                 </div>
-                <div class="col s3 l6">
-                  <img class="responsive-img" src="images/3_lat_cloudiness.png" alt="visualization 3">
+                <div class="col s3 m6 center-align">
+                  <a href="3_lat_cloudiness.html"><img class="hoverable responsive-img"
+                      src="images/3_lat_cloudiness.png" alt="Latitude vs Cloudiness Image"></a>
                 </div>
-                <div class="col s3 l6">
-                  <img class="responsive-img" src="images/4_lat_wind_speed.png" alt="visualization 4">
+                <div class="col s3 m6 center-align">
+                  <a href="4_lat_wind_speed.html"><img class="hoverable responsive-img"
+                      src="images/4_lat_wind_speed.png" alt="Latitude vs Wind Speed Image"></a>
                 </div>
               </div>
             </div>

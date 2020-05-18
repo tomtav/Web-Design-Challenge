@@ -18,16 +18,16 @@
                 <a href="index.html" class="brand-logo">Latitude</a>
                 <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="large material-icons">menu</i></a>
                 <ul class="right hide-on-med-and-down">
-                    <li><a class="dropdown-trigger" href="#" data-target="nav_dropdown">Plots<i
-                                class="material-icons right">arrow_drop_down</i></a></li>
+                    <li class="active"><a class="dropdown-trigger" href="#" data-target="nav_dropdown"
+                            data-activates="nav_dropdown">Plots<i class="material-icons right">arrow_drop_down</i></a>
+                    </li>
                     <ul id="nav_dropdown" class="dropdown-content">
                         <li><a href="1_lat_temp.html"><i class="material-icons">wb_sunny</i>Max Temperature</a></li>
                         <li><a href="2_lat_humidity.html"><i class="material-icons">blur_on</i>Humidity</a></li>
                         <li><a href="3_lat_cloudiness.html"><i class="material-icons">wb_cloudy</i>Cloudiness</a></li>
-                        <li><a href="4_lat_wind_speed.html"><i class="material-icons">network_check</i>Wind Speed</a>
-                        </li>
+                        <li><a class="active" href="#!"><i class="material-icons">network_check</i>Wind Speed</a></li>
                     </ul>
-                    <li class="active"><a class="waves-effect" href="comparison.html" alt="Comparison">Comparison</a>
+                    <li><a class="waves-effect" href="comparison.html" alt="Comparison">Comparison</a>
                     </li>
                     <li><a class="waves-effect" href="data.html" alt="Data">Data</a></li>
                 </ul>
@@ -43,12 +43,12 @@
                 </div>
             </li>
             <li><a class="waves-effect" href="index.html"><i class="material-icons">dashboard</i>Dashboard</a></li>
-            <li class="no-padding">
+            <li class="no-padding active">
                 <ul class="collapsible collapsible-accordion">
                     <li>
                         <a class="collapsible-header"><i class="material-icons">multiline_chart</i>Plots<i
                                 class="right material-icons">arrow_drop_down</i></a>
-                        <div class="collapsible-body">
+                        <div class="collapsible-body" style="display: block;">
                             <ul>
                                 <li><a class="waves-effect" href="1_lat_temp.html"><i
                                             class="material-icons">wb_sunny</i>Max
@@ -58,7 +58,7 @@
                                 </li>
                                 <li><a class="waves-effect" href="3_lat_cloudiness.html"><i
                                             class="material-icons">wb_cloudy</i>Cloudiness</a></li>
-                                <li><a class="waves-effect" href="4_lat_wind_speed.html"><i
+                                <li class="active"><a class="waves-effect" href="#!"><i
                                             class="material-icons">network_check</i>Wind
                                         Speed</a></li>
                             </ul>
@@ -66,53 +66,42 @@
                     </li>
                 </ul>
             </li>
-            <li class="active"><a class="waves-effect" href="comparison.html" alt="Comparison"><i
+            <li><a class="waves-effect" href="comparison.html" alt="Comparison"><i
                         class="material-icons">compare_arrows</i>Comparison</a></li>
             <li><a class="waves-effect" href="data.html" alt="Data"><i class="material-icons">data_usage</i>Data</a>
             </li>
         </ul>
     </header>
     <main>
-        <div class="container comparison">
+        <div class="container">
             <div class="row">
-                <div class="col">
+                <div class="col s12">
                     <div class="card">
                         <div class="card-content">
                             <h1 class="card-title">
-                                <i class="small material-icons">compare_arrows</i>
-                                Comparison: Latitude vs X
+                                <i class="small material-icons">network_check</i>
+                                Latitude vs Wind Speed
                             </h1>
                             <hr />
-                            <p class="caption">Click any plot to get an in-depth analysis.</p>
-                            <div class="row">
-                                <div class="col s12 m6 center-align">
-                                    <h5 class="image-title">vs. Max Temperature <i class="material-icons">wb_sunny</i>
-                                    </h5>
-                                    <a href="1_lat_temp.html">
-                                        <img class="hoverable responsive-img" src="images/1_lat_temp.png"
-                                            alt="Latitude vs Temperature Image"></a>
-                                </div>
-                                <div class="col s12 m6 center-align">
-                                    <h5 class="image-title">vs. Humidity <i class="material-icons">blur_on</i></h5>
-                                    <a href="2_lat_humidity.html"><img class="hoverable responsive-img"
-                                            src="images/2_lat_humidity.png" alt="Latitude vs Humidity Image"></a>
-                                </div>
-                                <div class="col s12 m6 center-align">
-                                    <h5 class="image-title">vs. Cloudiness <i class="material-icons">wb_cloudy</i></h5>
-                                    <a href="3_lat_cloudiness.html"><img class="hoverable responsive-img"
-                                            src="images/3_lat_cloudiness.png" alt="Latitude vs Cloudiness Image"></a>
-                                </div>
-                                <div class="col s12 m6 center-align">
-                                    <h5 class="image-title">vs. Wind Speed <i class="material-icons">network_check</i>
-                                    </h5>
-                                    <a href="4_lat_wind_speed.html"><img class="hoverable responsive-img"
-                                            src="images/4_lat_wind_speed.png" alt="Latitude vs Wind Speed Image"></a>
-                                </div>
-                            </div>
+                            <figure class="left">
+                                <img class="hoverable responsive-img" src="images/4_lat_wind_speed.png"
+                                    alt="Latitude vs Wind Speed Image">
+                            </figure>
+                            <p>
+                                This visualization of the cities wind speeds by their latitude was used to determine
+                                if there was a correlation between latitude and wind speeds as you get closer to the
+                                equator.
+                            </p>
+                            <p>
+                                In this diagram, you see there is a small positive correlation between wind speeds and
+                                latitude. Wind speeds increase as you move further away from the equator. The most
+                                common observations were speeds between 0 an 5 mph.
+                            </p>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
         </div>
     </main>
     <footer class="page-footer">

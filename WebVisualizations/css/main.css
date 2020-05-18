@@ -32,7 +32,6 @@ h3.header {
     margin-top: 0;
 }
 .header {
-    /* color: #ee6e73; */
     font-weight: 300;
 }
 h5.image-title {
@@ -52,7 +51,6 @@ h5.image-title {
     cursor: pointer;
     color: #ee6e73;
     font-weight: bold;
-    /*text-shadow: 1px 1px 1px black;*/
 }
 .collection .collection-item.avatar {
     min-height: 0px;
@@ -82,8 +80,8 @@ nav .sidenav-trigger i {
 .sidenav.fixed .collapsible-body {
     background: transparent;
 }
-.card .card-content > p {
-    padding-top: 30px;
+.card .card-content {
+    display: inline-block;
 }
 .card .card-content h1.card-title {
     color: #ee6e73;
@@ -105,15 +103,21 @@ nav .sidenav-trigger i {
 .card .card-content h2.card-title i {
     font-size: 2rem;
 }
-.card .card-content .card-title i {
+/* .card .card-content .card-title i {
     display: none;
-}
+} */
 hr {
     border-width: 2px;
 }
+.card .card-content > p {
+    padding-top: 1em;
+}
 .card .card-content > p.caption {
-    padding-top: 0px !important;
-    padding-bottom: 20px !important;
+    padding-top: 0px;
+    padding-bottom: 1em;
+}
+.card .viz-box {
+    padding-top: 20px;
 }
 .page-footer {
     position:relative;
@@ -171,10 +175,11 @@ body.dark .dropdown-content li>span {
     background-color: #9AA0A6 !important;
 }
 body.dark .dropdown-content li>a:hover, 
-body.dark .dropdown-content li>span:hover {
+body.dark .dropdown-content li>span:hover,
+body.dark .dropdown-content li>a.active, 
+body.dark .dropdown-content li>span.active {
     background-color: #666 !important;
 }
-
 body.dark nav ul li.active,
 body.dark nav ul li.active a
 {
@@ -185,6 +190,15 @@ body.dark nav ul li.active a
 }
 body.dark .card {
     background-color: rgba(255, 255, 255, 0.2);
+}
+body.dark h1,
+body.dark h2,
+body.dark h3,
+body.dark h4,
+body.dark h5 {
+    color: #000;
+    font-weight: bold;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);
 }
 body.dark .card .card-content h1.card-title {
     color: #000;
@@ -206,17 +220,29 @@ body.dark .divider {
 body.dark .sidenav {
     background-color: #2D2D31;
 }
+body.dark .sidenav li a.subheader,
+body.dark .sidenav li a .material-icons {
+    color: #9AA0A6;
+}
 body.dark .sidenav li a:not(.subheader) {
-    color: #89B2F5;
+    color: #9AA0A6;
 }
 body.dark .sidenav li a:not(.subheader):hover {
     background-color: #3B4043;
 }
-body.dark .sidenav li a.subheader {
-    color: #9AA0A6;
+body.dark .sidenav li.active,
+body.dark .sidenav .collapsible-body>ul:not(.collapsible)>li.active, 
+body.dark .sidenav.sidenav-fixed .collapsible-body>ul:not(.collapsible)>li.active {
+    background-color: #3B4043;
 }
-body.dark .sidenav li a .material-icons {
-    color: #9AA0A6;
+body.dark .sidenav li.active>a,
+body.dark .sidenav li.active>a> i,
+body.dark .sidenav li.active>ul.collapsible>li>a, 
+body.dark .sidenav li.active>ul.collapsible>li>a>i, 
+body.dark .sidenav .collapsible-body>ul:not(.collapsible)>li.active>a, 
+body.dark .sidenav .collapsible-body>ul:not(.collapsible)>li.active>a>i, 
+body.dark .sidenav.sidenav-fixed .collapsible-body>ul:not(.collapsible)>li.active>a {
+    color: #fff;
 }
 body.dark .collection {
     border: 1px solid rgba(255, 255, 255, 0.2);
@@ -230,7 +256,6 @@ body.dark nav ul a:hover {
     font-weight: bold;
     color: #000;
     text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);
-    /* background-color: #2196F3; */
 }
 
 @media (min-width: 1280px) {
