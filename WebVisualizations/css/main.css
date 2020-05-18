@@ -119,6 +119,13 @@ hr {
 .card .viz-box {
     padding-top: 20px;
 }
+.viz-box>.col:first-child>a.active>img {
+    width: 97%;
+}
+.col>a.active>img {
+    border: 3px solid #ee6e73;
+    opacity: 0.5;
+}
 .page-footer {
     position:relative;
     -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
@@ -258,11 +265,17 @@ body.dark nav ul a:hover {
     text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);
 }
 
-@media (min-width: 1280px) {
-    .card .card-content h2.card-title i {
-        display: inline;
+@media only screen and (max-width: 992px) {
+    nav .brand-logo {
+        left: 0px;
+        margin-left: 2rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        -webkit-transform: translateX(0px);
+        transform: translateX(0px);
     }
 }
+
 @media (min-width: 701px) {
     .card .card-content h1.card-title {
         font-size: 2.5em;
@@ -280,26 +293,19 @@ body.dark nav ul a:hover {
     .card .card-content .card-title {
         line-height: 2em;
     }
-    .card .card-content h1.card-title i {
-        display: inline;
+}
+
+@media (min-width: 601px) and (max-width: 718px) {
+    .viz-box>.col:first-child>a.active>img {
+        width: 96%;
     }
 }
+
 @media (min-width: 449px) {
     main .container {
             margin: 50px auto;
     }
     .card .card-content h1.card-title {
         font-size: 2em;
-    }
-}
-@media only screen and (max-width: 992px) {
-    nav .brand-logo {
-        left: 0px;
-        margin-left: 2rem;
-        padding-left: 2rem;
-        padding-right: 2rem;
-        background-color: #2196F3;
-        -webkit-transform: translateX(0px);
-        transform: translateX(0px);
     }
 }
