@@ -81,7 +81,7 @@ nav .sidenav-trigger i {
     background: transparent;
 }
 .card .card-content {
-    display: inline-block;
+    display: block;
 }
 .card .card-content h1.card-title {
     color: #ee6e73;
